@@ -4,6 +4,44 @@
     <meta charset="UTF-8">
     <title>Mr. Olympia Vēsture</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Stils vēstures kartītēm */
+        .history-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .history-card {
+            background-color: #1a1a1a;
+            padding: 15px;
+            border-radius: 8px;
+            width: calc(50% - 20px);
+            box-sizing: border-box;
+            border: 1px solid #333;
+        }
+        .history-card h3 {
+            margin-top: 0;
+            font-size: 18px;
+            color: #ffcc00;
+        }
+        .history-card p {
+            font-size: 14px;
+            line-height: 1.4;
+            margin-bottom: 0;
+        }
+        @media (max-width: 700px) {
+            .history-card {
+                width: 100%;
+            }
+        }
+        .page-img {
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
 
@@ -20,13 +58,32 @@
 <section>
     <h2>Turnīra attīstība</h2>
 
-    <ul>
-        <li>1965 – pirmais Mr. Olympia konkurss</li>
-        <li>1970–1980 – Arnold Schwarzenegger dominē</li>
-        <li>1980–1990 – Haney ēra</li>
-        <li>1998–2005 – Ronnie Coleman dominance</li>
-        <li>2010–2020 – modernā profesionālā ēra</li>
-    </ul>
+    <div class="history-container">
+        <div class="history-card">
+            <h3>1965 – Pirmais Mr. Olympia</h3>
+            <p>Pirmo reizi norisinājās Mr. Olympia konkurss. Šis bija sākums profesionālā bodybuildinga virsotnei.</p>
+        </div>
+
+        <div class="history-card">
+            <h3>1970–1980 – Arnold Schwarzenegger</h3>
+            <p>Arnolds dominēja ar savu simetriju un muskuļu proporcijām. Viņa karjera padarīja Mr. Olympia pasaules mēroga fenomenu.</p>
+        </div>
+
+        <div class="history-card">
+            <h3>1980–1990 – Haney ēra</h3>
+            <p>Lee Haney uzvarēja astoņas reizes pēc kārtas. Viņa stils bija tehniski perfekts un ietekmēja nākamo paaudzi.</p>
+        </div>
+
+        <div class="history-card">
+            <h3>1998–2005 – Ronnie Coleman</h3>
+            <p>Ronnie Coleman ieguva astoņas uzvaras. Viņš bija pazīstams ar neiedomājamu spēku un milzīgiem muskuļiem.</p>
+        </div>
+
+        <div class="history-card">
+            <h3>2010–2020 – Modernā profesionālā ēra</h3>
+            <p>Bodybuilding kļuva arvien konkurētspējīgāks. Jauni atlēti ieviesa dažādus treniņu stilus un estētikas standartus.</p>
+        </div>
+    </div>
 
     <img src="images/history.jpg" class="page-img">
 </section>
