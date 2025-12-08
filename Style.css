@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    background: #111;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background: url("images/hero.jpg") center/cover no-repeat;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0 15px #000;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    color: #ffcc00;
+}
+
+nav {
+    background: #222;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: gold;
+    text-decoration: none;
+    margin: 0 25px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    color: #ff6600;
+}
+
+.container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+td, th {
+    border: 1px solid #555;
+    padding: 12px;
+}
+
+th {
+    background: #333;
+    color: #ffcc00;
+}
+
+footer {
+    background: #000;
+    padding: 20px;
+    text-align: center;
+    color: #aaa;
+    margin-top: 40px;
+}
