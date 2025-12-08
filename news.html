@@ -4,6 +4,44 @@
     <meta charset="UTF-8">
     <title>Spēka Sporta Ziņas</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Papildus stils aktuālo ziņu kartītēm */
+        .news-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .news-card {
+            background-color: #1a1a1a;
+            padding: 15px;
+            border-radius: 8px;
+            width: calc(50% - 20px);
+            box-sizing: border-box;
+            border: 1px solid #333;
+        }
+        .news-card h3 {
+            margin-top: 0;
+            font-size: 18px;
+            color: #ffcc00;
+        }
+        .news-card p {
+            font-size: 14px;
+            line-height: 1.4;
+            margin-bottom: 0;
+        }
+        @media (max-width: 700px) {
+            .news-card {
+                width: 100%;
+            }
+        }
+        .page-img {
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
 
@@ -20,16 +58,37 @@
 <section>
     <h2>Aktualitātes</h2>
 
-    <ul>
-        <li>2025. gada Olympia Classic Physique konkurence gaidāma ar rekordlielu dalībnieku skaitu.</li>
-        <li>Jauni rekordi spēka trīscīņā – 475 kg pietupieni 110 kg kategorijā.</li>
-        <li>Jaunas tendences bodibildingā: hibrīda treniņi spēka + hipertrofijas attīstīšanai.</li>
-        <li>Mr. Olympia 2025 sagatavošanās posmi notiek vairākās valstīs.</li>
-        <li>Jauni talanti spēka trīscīņā demonstrē augstus rezultātus sacensībās Eiropā.</li>
-        <li>Modernizētas treniņu programmas bodybuildinga atlētiem – fokusā muskuļu simetrija un proporcijas.</li>
-        <li>Oficiālais Mr. Olympia kanāls publicē jaunu sēriju ar treneru un atlētu intervijām.</li>
-        <li>Arī amatieru līmeņa sacensības piesaista arvien vairāk dalībnieku un skatītāju.</li>
-    </ul>
+    <div class="news-container">
+        <div class="news-card">
+            <h3>Olympia 2025 sagatavošanās</h3>
+            <p>Classic Physique konkurence šogad gaida rekordlielu dalībnieku skaitu. Organizatori uzsver augstu kvalitāti un drošības pasākumus.</p>
+        </div>
+
+        <div class="news-card">
+            <h3>Spēka trīscīņas rekordi</h3>
+            <p>Jauni rekordi 110 kg kategorijā: pietupieni līdz 475 kg. Atlēti turpina pārsteigt ar izcilu sniegumu.</p>
+        </div>
+
+        <div class="news-card">
+            <h3>Bodybuildinga treniņu tendences</h3>
+            <p>Hibrīda treniņi popularizējas, apvienojot spēka un hipertrofijas elementus. Treneri iesaka pielāgot programmu individuāli.</p>
+        </div>
+
+        <div class="news-card">
+            <h3>Jaunie talanti Eiropā</h3>
+            <p>Amatieru sacensībās izceļas jauni atlēti ar augstiem rezultātiem. Tas sola nākotnes zvaigznes starptautiskajās sacensībās.</p>
+        </div>
+
+        <div class="news-card">
+            <h3>Mr. Olympia oficiālais kanāls</h3>
+            <p>Jaunas video sērijas ar treneru un atlētu intervijām. Fani var sekot sagatavošanās procesam tiešsaistē.</p>
+        </div>
+
+        <div class="news-card">
+            <h3>Amatieru līmeņa sacensības</h3>
+            <p>Arvien vairāk dalībnieku un skatītāju piesaista vietējās sacensības. Tas palīdz audzēt nākamās paaudzes atlētus.</p>
+        </div>
+    </div>
 
     <img src="images/news.jpg" class="page-img">
 </section>
